@@ -1,0 +1,509 @@
+{
+  "uid" : "53daa10c2d680f30",
+  "name" : "testFinance",
+  "title" : "Test finance",
+  "time" : {
+    "start" : 1538407462294,
+    "stop" : 1538407500531,
+    "duration" : 38237
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 30
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "ee2178880b13d99b",
+    "name" : "Finance : Finance",
+    "title" : "Finance : Finance"
+  },
+  "steps" : [ {
+    "name" : "getIndexAbsoluteChangeOf[0]",
+    "title" : "Get index absolute change of [0]",
+    "time" : {
+      "start" : 1538407482916,
+      "stop" : 1538407483257,
+      "duration" : 341
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexAbsoluteChangeOf[1]",
+    "title" : "Get index absolute change of [1]",
+    "time" : {
+      "start" : 1538407483258,
+      "stop" : 1538407483396,
+      "duration" : 138
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexAbsoluteChangeOf[2]",
+    "title" : "Get index absolute change of [2]",
+    "time" : {
+      "start" : 1538407483397,
+      "stop" : 1538407483519,
+      "duration" : 122
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexAbsoluteChangeOf[3]",
+    "title" : "Get index absolute change of [3]",
+    "time" : {
+      "start" : 1538407483520,
+      "stop" : 1538407483640,
+      "duration" : 120
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexAbsoluteChangeOf[4]",
+    "title" : "Get index absolute change of [4]",
+    "time" : {
+      "start" : 1538407483641,
+      "stop" : 1538407483876,
+      "duration" : 235
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexRelativeChangeOf[0]",
+    "title" : "Get index relative change of [0]",
+    "time" : {
+      "start" : 1538407483889,
+      "stop" : 1538407484026,
+      "duration" : 137
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexRelativeChangeOf[1]",
+    "title" : "Get index relative change of [1]",
+    "time" : {
+      "start" : 1538407484027,
+      "stop" : 1538407484122,
+      "duration" : 95
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexRelativeChangeOf[2]",
+    "title" : "Get index relative change of [2]",
+    "time" : {
+      "start" : 1538407484124,
+      "stop" : 1538407484327,
+      "duration" : 203
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexRelativeChangeOf[3]",
+    "title" : "Get index relative change of [3]",
+    "time" : {
+      "start" : 1538407484328,
+      "stop" : 1538407484473,
+      "duration" : 145
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexRelativeChangeOf[4]",
+    "title" : "Get index relative change of [4]",
+    "time" : {
+      "start" : 1538407484474,
+      "stop" : 1538407484650,
+      "duration" : 176
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "clickOnIndexOf[0]",
+    "title" : "Click on index of [0]",
+    "time" : {
+      "start" : 1538407484653,
+      "stop" : 1538407486784,
+      "duration" : 2131
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexOpenValue",
+    "title" : "Get index open value",
+    "time" : {
+      "start" : 1538407486786,
+      "stop" : 1538407486979,
+      "duration" : 193
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexMaxValue",
+    "title" : "Get index max value",
+    "time" : {
+      "start" : 1538407486980,
+      "stop" : 1538407487096,
+      "duration" : 116
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexMinValue",
+    "title" : "Get index min value",
+    "time" : {
+      "start" : 1538407487098,
+      "stop" : 1538407487206,
+      "duration" : 108
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "clickOnIndexOf[1]",
+    "title" : "Click on index of [1]",
+    "time" : {
+      "start" : 1538407488331,
+      "stop" : 1538407490099,
+      "duration" : 1768
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexOpenValue",
+    "title" : "Get index open value",
+    "time" : {
+      "start" : 1538407490102,
+      "stop" : 1538407490211,
+      "duration" : 109
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexMaxValue",
+    "title" : "Get index max value",
+    "time" : {
+      "start" : 1538407490212,
+      "stop" : 1538407490291,
+      "duration" : 79
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexMinValue",
+    "title" : "Get index min value",
+    "time" : {
+      "start" : 1538407490293,
+      "stop" : 1538407490385,
+      "duration" : 92
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "clickOnIndexOf[2]",
+    "title" : "Click on index of [2]",
+    "time" : {
+      "start" : 1538407491221,
+      "stop" : 1538407492885,
+      "duration" : 1664
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexOpenValue",
+    "title" : "Get index open value",
+    "time" : {
+      "start" : 1538407492886,
+      "stop" : 1538407493012,
+      "duration" : 126
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexMaxValue",
+    "title" : "Get index max value",
+    "time" : {
+      "start" : 1538407493013,
+      "stop" : 1538407493151,
+      "duration" : 138
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexMinValue",
+    "title" : "Get index min value",
+    "time" : {
+      "start" : 1538407493152,
+      "stop" : 1538407493289,
+      "duration" : 137
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "clickOnIndexOf[3]",
+    "title" : "Click on index of [3]",
+    "time" : {
+      "start" : 1538407494159,
+      "stop" : 1538407496027,
+      "duration" : 1868
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexOpenValue",
+    "title" : "Get index open value",
+    "time" : {
+      "start" : 1538407496028,
+      "stop" : 1538407496176,
+      "duration" : 148
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexMaxValue",
+    "title" : "Get index max value",
+    "time" : {
+      "start" : 1538407496177,
+      "stop" : 1538407496230,
+      "duration" : 53
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexMinValue",
+    "title" : "Get index min value",
+    "time" : {
+      "start" : 1538407496231,
+      "stop" : 1538407496518,
+      "duration" : 287
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "clickOnIndexOf[4]",
+    "title" : "Click on index of [4]",
+    "time" : {
+      "start" : 1538407497469,
+      "stop" : 1538407499216,
+      "duration" : 1747
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexOpenValue",
+    "title" : "Get index open value",
+    "time" : {
+      "start" : 1538407499220,
+      "stop" : 1538407499326,
+      "duration" : 106
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexMaxValue",
+    "title" : "Get index max value",
+    "time" : {
+      "start" : 1538407499326,
+      "stop" : 1538407499417,
+      "duration" : 91
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "getIndexMinValue",
+    "title" : "Get index min value",
+    "time" : {
+      "start" : 1538407499418,
+      "stop" : 1538407499497,
+      "duration" : 79
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "suite-title",
+    "value" : "Finance : Finance"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testSuite",
+    "value" : "Finance"
+  }, {
+    "name" : "testMethod",
+    "value" : "testFinance"
+  }, {
+    "name" : "host",
+    "value" : "Nazar"
+  }, {
+    "name" : "suite-name",
+    "value" : "Finance : Finance"
+  }, {
+    "name" : "testGroup",
+    "value" : "Finance"
+  }, {
+    "name" : "testClass",
+    "value" : "FinanceTest"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "thread",
+    "value" : "10472@Nazar.main(1)"
+  } ],
+  "parameters" : [ ]
+}

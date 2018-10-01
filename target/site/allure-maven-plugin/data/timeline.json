@@ -1,0 +1,31 @@
+{
+  "hosts" : [ {
+    "title" : "Nazar",
+    "threads" : [ {
+      "title" : "10472@Nazar.main(1)",
+      "testCases" : [ {
+        "uid" : "53daa10c2d680f30",
+        "name" : "testFinance",
+        "title" : "Test finance",
+        "time" : {
+          "start" : 1538407462294,
+          "stop" : 1538407500531,
+          "duration" : 38237
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "6282823d692f8714",
+        "name" : "testFinance2",
+        "title" : "Test finance 2",
+        "time" : {
+          "start" : 1538407500544,
+          "stop" : 1538407500545,
+          "duration" : 1
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  } ]
+}

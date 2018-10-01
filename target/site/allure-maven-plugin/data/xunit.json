@@ -1,0 +1,49 @@
+{
+  "time" : {
+    "start" : 1538407462294,
+    "stop" : 1538407500545,
+    "duration" : 38251
+  },
+  "testSuites" : [ {
+    "uid" : "ee2178880b13d99b",
+    "name" : "Finance : Finance",
+    "title" : "Finance : Finance",
+    "time" : {
+      "start" : 1538407462294,
+      "stop" : 1538407500545,
+      "duration" : 38251
+    },
+    "statistic" : {
+      "total" : 2,
+      "passed" : 2,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "53daa10c2d680f30",
+      "name" : "testFinance",
+      "title" : "Test finance",
+      "time" : {
+        "start" : 1538407462294,
+        "stop" : 1538407500531,
+        "duration" : 38237
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "6282823d692f8714",
+      "name" : "testFinance2",
+      "title" : "Test finance 2",
+      "time" : {
+        "start" : 1538407500544,
+        "stop" : 1538407500545,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    } ]
+  } ]
+}
