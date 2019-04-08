@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Finance">
-              <span class="suite-name border-passed">Finance</span>
+              <span class="suite-name border-failed">Finance</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Finance">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Finance" class="hide-methods failed suite-Finance"> (hide)</a> <!-- hide-methods failed suite-Finance -->
+                      <a href="#" panel-name="suite-Finance" class="show-methods failed suite-Finance"> (show)</a> <!-- show-methods failed suite-Finance -->
+                    </span>
+                    <div class="method-list-content failed suite-Finance">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Finance" title="FinanceTest" hash-for-method="testFinance(166.70.88.210:30352)">testFinance(166.70.88.210:30352)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Finance -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +116,7 @@
                     <div class="method-list-content passed suite-Finance">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Finance" title="FinanceTest" hash-for-method="testFinance">testFinance</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Finance" title="FinanceTest" hash-for-method="testFinance2">testFinance2</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Finance" title="FinanceTest" hash-for-method="testFinance(52.124.6.146:39721)">testFinance(52.124.6.146:39721)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Finance -->
@@ -122,6 +131,37 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Finance" class="panel Finance">
+          <div class="suite-Finance-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">FinanceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFinance(166.70.88.210:30352)">
+                  </a> <!-- testFinance(166.70.88.210:30352) -->
+                  <span class="method-name">testFinance</span>
+                  <span class="parameters">(166.70.88.210:30352)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;NAZAR&apos;, ip: &apos;10.10.0.49&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:776)
+	at DriverFactory.getInstance(DriverFactory.java:21)
+	at AbstractPage.&lt;init&gt;(AbstractPage.java:38)
+	at FinancePage.&lt;init&gt;(FinancePage.java:52)
+	at FinanceBO.&lt;init&gt;(FinanceBO.java:19)
+	at FinanceTest.testFinance(FinanceTest.java:29)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Finance-class-failed -->
           <div class="suite-Finance-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -130,16 +170,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testFinance">
-                  </a> <!-- testFinance -->
+                  <a name="testFinance(52.124.6.146:39721)">
+                  </a> <!-- testFinance(52.124.6.146:39721) -->
                   <span class="method-name">testFinance</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testFinance2">
-                  </a> <!-- testFinance2 -->
-                  <span class="method-name">testFinance2</span>
+                  <span class="parameters">(52.124.6.146:39721)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -154,11 +188,18 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Finance&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Finance&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Finance1&quot;&gt;
+    &lt;parameter name=&quot;ip&quot; value=&quot;52.124.6.146:39721&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;FinanceTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Finance --&gt;
+  &lt;/test&gt; &lt;!-- Finance1 --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Finance2&quot;&gt;
+    &lt;parameter name=&quot;ip&quot; value=&quot;166.70.88.210:30352&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;FinanceTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Finance2 --&gt;
 &lt;/suite&gt; &lt;!-- Finance --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -170,7 +211,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Finance (1 class)</span>
+                <span class="test-name">Finance1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Finance2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -200,16 +244,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testFinance')
 data.setCell(0, 2, 'FinanceTest')
-data.setCell(0, 3, 38439);
+data.setCell(0, 3, 59656);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testFinance2')
+data.setCell(1, 1, 'testFinance')
 data.setCell(1, 2, 'FinanceTest')
-data.setCell(1, 3, 4);
+data.setCell(1, 3, 50);
 window.suiteTableData['Finance']= { tableData: data, tableDiv: 'times-div-Finance'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 59 seconds</span>
               <div id="times-div-Finance">
               </div> <!-- times-div-Finance -->
             </div> <!-- times-div -->
@@ -237,13 +281,25 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">FinanceTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testFinance</span>
+                <span class="method-name">testFinance(52.124.6.146:39721)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">59689 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">testFinance2</span>
-                <span class="method-start">38459 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testFinance(166.70.88.210:30352)</span>
+                <span class="method-start">65701 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">65938 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
