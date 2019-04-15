@@ -415,27 +415,20 @@ public class AbstractPage {
 
         LOG.info(String.format("Going to : %s", MINUTE_MAIL_URL1));
         driver.get(MINUTE_MAIL_URL1);
-        Thread.sleep(6 * 60 * 1000);
+        Thread.sleep(5 * 60 * 1000);
         //driver.findElement(By.xpath("//a[@href='more.html']")).click(); //Give me 10 more minutes
         //driver.navigate().refresh();
-        Boolean destructedIsPresent = driver.findElements(By.xpath("//p/strong[contains(text(), 'self-destructed')]")).size() > 0;
-        if (destructedIsPresent) {
-            waitUntilElementToBeClickable(10, driver.findElement(By.xpath("//a[@href='recover.html']")));
-            LOG.info("Recovering destructed email");
-            driver.findElement(By.xpath("//a[@href='recover.html']")).click();
-        }
+        recoverDestructedMail();
         JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("arguments[0].scrollIntoView()", driver.findElement(By.xpath("//a[contains(text(),'getesa.com')]")));
-        waitUntilElementToBeClickable(10, driver.findElement(By.xpath("//a[contains(text(),'getesa.com')]")));
-        LOG.info("Clicking to expand received email");
+        //jse.executeScript("arguments[0].scrollIntoView()", driver.findElement(By.xpath("//a[contains(text(),'getesa.com')]")));
+        //waitUntilElementToBeClickable(10, driver.findElement(By.xpath("//a[contains(text(),'getesa.com')]")));
         //driver.findElement(By.xpath("//a[contains(text(),'getesa.com')]")).click();
-        new WebDriverWait(driver, 5)
-                .ignoring(StaleElementReferenceException.class)
-                .until((WebDriver d) -> {
-                    d.findElement(By.xpath("//a[contains(text(),'getesa.com')]")).click();
-                    return true;
-                });
-        Thread.sleep(4000);
+        expandReceivedEmail();
+        Boolean emailIsPresent = driver.findElements(By.xpath("//a[contains(text(),'shopperapproved')]")).size() > 0;
+        if (!emailIsPresent) {
+            recoverDestructedMail();
+            expandReceivedEmail();
+        }
         waitUntilElementToBeClickable(10, driver.findElement(By.xpath("//a[contains(text(),'shopperapproved')]")));
         jse.executeScript("arguments[0].scrollIntoView()", driver.findElement(By.xpath("//a[contains(text(),'shopperapproved')]")));
         //LOG.info("Clicking on confirmation link in received email");
@@ -447,6 +440,27 @@ public class AbstractPage {
         driver.get(driver.findElement(By.xpath("//a[contains(text(),'shopperapproved')]")).getAttribute("href"));
         //driver.findElement(By.xpath("//a[contains(text(),'Activate')]")).click();
         Thread.sleep(7000);
+    }
+
+    public void recoverDestructedMail() throws Exception{
+        Boolean destructedIsPresent = driver.findElements(By.xpath("//p/strong[contains(text(), 'self-destructed')]")).size() > 0;
+        if (destructedIsPresent) {
+            waitUntilElementToBeClickable(10, driver.findElement(By.xpath("//a[@href='recover.html']")));
+            LOG.info("Recovering destructed email");
+            driver.findElement(By.xpath("//a[@href='recover.html']")).click();
+            Thread.sleep(3000);
+        }
+    }
+
+    public void expandReceivedEmail() throws Exception{
+        LOG.info("Clicking to expand received email");
+        new WebDriverWait(driver, 5)
+                .ignoring(StaleElementReferenceException.class)
+                .until((WebDriver d) -> {
+                    d.findElement(By.xpath("//a[contains(text(),'getesa.com')]")).click();
+                    return true;
+                });
+        Thread.sleep(4000);
     }
 
 

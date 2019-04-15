@@ -306,7 +306,7 @@ public class FinanceTest {
     public void tearDown(ITestResult result) throws Exception {
         DriverFactory.closeDriver();
         if (result.getStatus() == ITestResult.SUCCESS) {
-            int sleepTime = (int) (Math.random() * 1200000) + 900000;
+            int sleepTime = (int) (Math.random() * 1200000) + 1200000;
             //int sleepTime = (int)(Math.random()*3000)+5000;
             LOG.info(String.format("Waiting for another bot session : %d", sleepTime));
             Thread.sleep(sleepTime);
