@@ -11,7 +11,7 @@ public class SimpleRetryer implements IRetryAnalyzer {
     private final static Logger LOG = Logger.getLogger(SimpleRetryer.class);
 
     private int retryCount = 0;
-    private static final int MAX_RETRY_COUNT = 35;
+    private static final int MAX_RETRY_COUNT = 40;
 
     @Override
     public boolean retry(ITestResult iTestResult) {

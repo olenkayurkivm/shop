@@ -36,6 +36,7 @@ public class AbstractPage {
     final static public String HIDEME_SOCKS5_URL = "https://hidemyna.me/en/proxy-list/?country=US&type=5";
     final static public String HIDEME_SOCKS4_URL = "https://hidemyna.me/en/proxy-list/?country=US&type=4";
     final static public String SPYSONE_URL = "http://spys.one/free-proxy-list/US/";
+    final static public String USPROXYORG_URL = "https://www.us-proxy.org/";
     static WebDriver driver;
     //private final WebDriverWait webDriverWait = new WebDriverWait(driver, 5);
 
@@ -126,8 +127,9 @@ public class AbstractPage {
         return driver;
     }
 
-    public void parseHideMeAll() throws Exception {
+    public void parseAllProxySites() throws Exception {
         List<ProxyObject> proxiesToRecord = new ArrayList<>();
+        proxiesToRecord.addAll(parseUsProxyOrg());
         proxiesToRecord.addAll(parseHideMe(HIDEME_SOCKS4_URL));
         proxiesToRecord.addAll(parseHideMe(HIDEME_SOCKS5_URL));
         proxiesToRecord.addAll(parseHideMe(HIDEME_HTTP_URL));
@@ -140,7 +142,7 @@ public class AbstractPage {
         Boolean arrowRightIsPresent = false;
         List<ProxyObject> parsedProxies = new ArrayList<>();
         do {
-            Thread.sleep(5000);
+            Thread.sleep(3000);
             waitUntilVisibilityOfAllElements(15, driver.findElements(By.xpath("//table[@class='proxy__t']//tr/td[@class='tdl']")));
             //List<WebElement> hideIpsWe = driver.findElements(By.xpath("//table[@class='proxy__t']//tr/td[@class='tdl']"));
             //List<WebElement> hidePortsWe = driver.findElements(By.xpath("//table[@class='proxy__t']/tbody/tr/td[2]"));
@@ -195,6 +197,29 @@ public class AbstractPage {
 
 
         //return parsedProxies;
+    }
+
+    public List<ProxyObject> parseUsProxyOrg() throws Exception {
+        driver.get(USPROXYORG_URL);
+        Boolean arrowRightIsPresent = false;
+        List<ProxyObject> parsedProxies = new ArrayList<>();
+        Thread.sleep(2000);
+        waitUntilElementToBeClickable(10, driver.findElement(By.cssSelector("select[name='proxylisttable_length']>option[value='80']")));
+        driver.findElement(By.cssSelector("select[name='proxylisttable_length']>option[value='80']")).click();
+        Thread.sleep(2000);
+        waitUntilVisibilityOfAllElements(15, driver.findElements(By.cssSelector("#proxylisttable>tbody>tr")));
+        List<WebElement> hideIpsWe = driver.findElements(By.cssSelector("#proxylisttable>tbody>tr"));
+        for (WebElement hideIpWe : hideIpsWe) {
+            ProxyObject proxyObject = new ProxyObject();
+            proxyObject.setProxyIp(StringUtils.substringBefore(hideIpWe.getText(), " "));
+            proxyObject.setProxyPort(StringUtils.substringAfterLast(StringUtils.substringBefore(hideIpWe.getText(), "US").trim(), " "));
+            proxyObject.setProxyType("0");
+            parsedProxies.add(proxyObject);
+            System.out.println(proxyObject.getProxyIp() + ',' + proxyObject.getProxyPort() + ',' + proxyObject.getProxyType());
+        }
+
+
+        return parsedProxies;
     }
 
 

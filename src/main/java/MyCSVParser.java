@@ -153,7 +153,7 @@ public class MyCSVParser {
     //----------------------------------------------------------------------------------------------
 
     public static void writeProxy(List<ProxyObject> proxiesToRecord) throws IOException {
-
+            LOG.info("Recording parsed proxies...");
             BufferedWriter writer = Files.newBufferedWriter(Paths.get(PROXY_CSV));
             CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT);
             for (ProxyObject proxy : proxiesToRecord) {

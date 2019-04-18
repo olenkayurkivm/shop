@@ -39,7 +39,7 @@ public class FinanceTest {
         usedProxiesToRecord.add(proxy);
         page1.confirmRateUsingMinuteEmail();
         page1.fillSatisfactionSurvey(stateForProxy);
-        //page1.parseHideMeAll();
+        //page1.parseAllProxySites();
         //page1.parseSpysOne();
         //AbstractPage.getDriver().get("https://getesa.com/");
         //page1.testMinuteEmail();
