@@ -42,11 +42,9 @@ public class MyListener implements  ITestListener {
         LOG.info("------------------------------------------------------------------");
         LOG.info("------------------------FAIL--------------------------------------");
         LOG.info("------------------------------------------------------------------");
-        LOG.info(iTestResult.getThrowable().getMessage());
         StringWriter sw = new StringWriter();
         iTestResult.getThrowable().printStackTrace(new PrintWriter(sw));
-        String stacktrace = sw.toString();
-        LOG.info(stacktrace);
+        LOG.info(sw.toString());
 
         takeScreenshot(iTestResult);
         if((iTestResult.getThrowable().getMessage()).contains("Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#Overall_5\"}")) {
@@ -91,7 +89,6 @@ public class MyListener implements  ITestListener {
         LOG.info("------------------------------------------------------------------");
         LOG.info("------------------------SKIP--------------------------------------");
         LOG.info("------------------------------------------------------------------");
-        LOG.info(iTestResult.getThrowable().getMessage());
         StringWriter sw = new StringWriter();
         iTestResult.getThrowable().printStackTrace(new PrintWriter(sw));
         String stacktrace = sw.toString();

@@ -459,15 +459,17 @@ public class AbstractPage {
         //LOG.info("Clicking on confirmation link in received email");
         //jse.executeScript("arguments[0].click();", driver.findElement(By.cssSelector("#messagesList>h3+div br+a:not([href='#']):not([href='http://getesa.com'])")));
         //waitUntilVisibilityOf(10, driver.findElement(By.cssSelector("#messagesList>h3+div br+a:not([href='#']):not([href='http://getesa.com'])")));
-        LOG.info("Clicking on confirmation link in received email");
+
         //jse.executeScript("arguments[0].click();", driver.findElement(By.cssSelector("#messagesList>h3+div br+a:not([href='#']):not([href='http://getesa.com'])")));
         LOG.warn(driver.findElement(By.xpath("//a[contains(text(),'shopperapproved')]")).getText());
+        LOG.info("Clicking on confirmation link in received email");
         driver.get(driver.findElement(By.xpath("//a[contains(text(),'shopperapproved')]")).getAttribute("href"));
         //driver.findElement(By.xpath("//a[contains(text(),'Activate')]")).click();
         Thread.sleep(7000);
     }
 
     public void recoverDestructedMail() throws Exception{
+        LOG.info("Inside 'recoverDestructed Email' method");
         Boolean destructedIsPresent = driver.findElements(By.xpath("//p/strong[contains(text(), 'self-destructed')]")).size() > 0;
         if (destructedIsPresent) {
             waitUntilElementToBeClickable(10, driver.findElement(By.xpath("//a[@href='recover.html']")));

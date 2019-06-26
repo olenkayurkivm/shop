@@ -155,125 +155,125 @@ public class FinanceTest {
     }
 
 
-    @Test(retryAnalyzer = SimpleRetryer.class)
-    public void testFinance11() throws Exception{
-        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
-        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
-        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
-        String targetEmail = page1.registerMinuteEmail();
-        page1.fillRatingForm(targetEmail);
-        usedProxiesToRecord.add(proxy);
-        page1.confirmRateUsingMinuteEmail();
-        page1.fillSatisfactionSurvey(stateForProxy);
-    }
+//    @Test(retryAnalyzer = SimpleRetryer.class)
+//    public void testFinance11() throws Exception{
+//        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
+//        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
+//        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
+//        String targetEmail = page1.registerMinuteEmail();
+//        page1.fillRatingForm(targetEmail);
+//        usedProxiesToRecord.add(proxy);
+//        page1.confirmRateUsingMinuteEmail();
+//        page1.fillSatisfactionSurvey(stateForProxy);
+//    }
+//
+//    @Test(retryAnalyzer = SimpleRetryer.class)
+//    public void testFinance12() throws Exception{
+//        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
+//        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
+//        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
+//        String targetEmail = page1.registerMinuteEmail();
+//        page1.fillRatingForm(targetEmail);
+//        usedProxiesToRecord.add(proxy);
+//        page1.confirmRateUsingMinuteEmail();
+//        page1.fillSatisfactionSurvey(stateForProxy);
+//    }
+//
+//    @Test(retryAnalyzer = SimpleRetryer.class)
+//    public void testFinance13() throws Exception{
+//        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
+//        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
+//        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
+//        String targetEmail = page1.registerMinuteEmail();
+//        page1.fillRatingForm(targetEmail);
+//        usedProxiesToRecord.add(proxy);
+//        page1.confirmRateUsingMinuteEmail();
+//        page1.fillSatisfactionSurvey(stateForProxy);
+//    }
+//
+//    @Test(retryAnalyzer = SimpleRetryer.class)
+//    public void testFinance14() throws Exception{
+//        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
+//        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
+//        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
+//        String targetEmail = page1.registerMinuteEmail();
+//        page1.fillRatingForm(targetEmail);
+//        usedProxiesToRecord.add(proxy);
+//        page1.confirmRateUsingMinuteEmail();
+//        page1.fillSatisfactionSurvey(stateForProxy);
+//    }
+//
+//    @Test(retryAnalyzer = SimpleRetryer.class)
+//    public void testFinance15() throws Exception{
+//        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
+//        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
+//        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
+//        String targetEmail = page1.registerMinuteEmail();
+//        page1.fillRatingForm(targetEmail);
+//        usedProxiesToRecord.add(proxy);
+//        page1.confirmRateUsingMinuteEmail();
+//        page1.fillSatisfactionSurvey(stateForProxy);
+//    }
 
-    @Test(retryAnalyzer = SimpleRetryer.class)
-    public void testFinance12() throws Exception{
-        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
-        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
-        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
-        String targetEmail = page1.registerMinuteEmail();
-        page1.fillRatingForm(targetEmail);
-        usedProxiesToRecord.add(proxy);
-        page1.confirmRateUsingMinuteEmail();
-        page1.fillSatisfactionSurvey(stateForProxy);
-    }
-
-    @Test(retryAnalyzer = SimpleRetryer.class)
-    public void testFinance13() throws Exception{
-        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
-        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
-        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
-        String targetEmail = page1.registerMinuteEmail();
-        page1.fillRatingForm(targetEmail);
-        usedProxiesToRecord.add(proxy);
-        page1.confirmRateUsingMinuteEmail();
-        page1.fillSatisfactionSurvey(stateForProxy);
-    }
-
-    @Test(retryAnalyzer = SimpleRetryer.class)
-    public void testFinance14() throws Exception{
-        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
-        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
-        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
-        String targetEmail = page1.registerMinuteEmail();
-        page1.fillRatingForm(targetEmail);
-        usedProxiesToRecord.add(proxy);
-        page1.confirmRateUsingMinuteEmail();
-        page1.fillSatisfactionSurvey(stateForProxy);
-    }
-
-    @Test(retryAnalyzer = SimpleRetryer.class)
-    public void testFinance15() throws Exception{
-        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
-        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
-        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
-        String targetEmail = page1.registerMinuteEmail();
-        page1.fillRatingForm(targetEmail);
-        usedProxiesToRecord.add(proxy);
-        page1.confirmRateUsingMinuteEmail();
-        page1.fillSatisfactionSurvey(stateForProxy);
-    }
-
-    @Test(retryAnalyzer = SimpleRetryer.class)
-    public void testFinance16() throws Exception{
-        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
-        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
-        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
-        String targetEmail = page1.registerMinuteEmail();
-        page1.fillRatingForm(targetEmail);
-        usedProxiesToRecord.add(proxy);
-        page1.confirmRateUsingMinuteEmail();
-        page1.fillSatisfactionSurvey(stateForProxy);
-    }
-
-    @Test(retryAnalyzer = SimpleRetryer.class)
-    public void testFinance17() throws Exception{
-        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
-        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
-        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
-        String targetEmail = page1.registerMinuteEmail();
-        page1.fillRatingForm(targetEmail);
-        usedProxiesToRecord.add(proxy);
-        page1.confirmRateUsingMinuteEmail();
-        page1.fillSatisfactionSurvey(stateForProxy);
-    }
-
-    @Test(retryAnalyzer = SimpleRetryer.class)
-    public void testFinance18() throws Exception{
-        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
-        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
-        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
-        String targetEmail = page1.registerMinuteEmail();
-        page1.fillRatingForm(targetEmail);
-        usedProxiesToRecord.add(proxy);
-        page1.confirmRateUsingMinuteEmail();
-        page1.fillSatisfactionSurvey(stateForProxy);
-    }
-
-    @Test(retryAnalyzer = SimpleRetryer.class)
-    public void testFinance19() throws Exception{
-        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
-        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
-        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
-        String targetEmail = page1.registerMinuteEmail();
-        page1.fillRatingForm(targetEmail);
-        usedProxiesToRecord.add(proxy);
-        page1.confirmRateUsingMinuteEmail();
-        page1.fillSatisfactionSurvey(stateForProxy);
-    }
-
-    @Test(retryAnalyzer = SimpleRetryer.class)
-    public void testFinance20() throws Exception{
-        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
-        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
-        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
-        String targetEmail = page1.registerMinuteEmail();
-        page1.fillRatingForm(targetEmail);
-        usedProxiesToRecord.add(proxy);
-        page1.confirmRateUsingMinuteEmail();
-        page1.fillSatisfactionSurvey(stateForProxy);
-    }
+//    @Test(retryAnalyzer = SimpleRetryer.class)
+//    public void testFinance16() throws Exception{
+//        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
+//        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
+//        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
+//        String targetEmail = page1.registerMinuteEmail();
+//        page1.fillRatingForm(targetEmail);
+//        usedProxiesToRecord.add(proxy);
+//        page1.confirmRateUsingMinuteEmail();
+//        page1.fillSatisfactionSurvey(stateForProxy);
+//    }
+//
+//    @Test(retryAnalyzer = SimpleRetryer.class)
+//    public void testFinance17() throws Exception{
+//        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
+//        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
+//        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
+//        String targetEmail = page1.registerMinuteEmail();
+//        page1.fillRatingForm(targetEmail);
+//        usedProxiesToRecord.add(proxy);
+//        page1.confirmRateUsingMinuteEmail();
+//        page1.fillSatisfactionSurvey(stateForProxy);
+//    }
+//
+//    @Test(retryAnalyzer = SimpleRetryer.class)
+//    public void testFinance18() throws Exception{
+//        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
+//        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
+//        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
+//        String targetEmail = page1.registerMinuteEmail();
+//        page1.fillRatingForm(targetEmail);
+//        usedProxiesToRecord.add(proxy);
+//        page1.confirmRateUsingMinuteEmail();
+//        page1.fillSatisfactionSurvey(stateForProxy);
+//    }
+//
+//    @Test(retryAnalyzer = SimpleRetryer.class)
+//    public void testFinance19() throws Exception{
+//        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
+//        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
+//        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
+//        String targetEmail = page1.registerMinuteEmail();
+//        page1.fillRatingForm(targetEmail);
+//        usedProxiesToRecord.add(proxy);
+//        page1.confirmRateUsingMinuteEmail();
+//        page1.fillSatisfactionSurvey(stateForProxy);
+//    }
+//
+//    @Test(retryAnalyzer = SimpleRetryer.class)
+//    public void testFinance20() throws Exception{
+//        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
+//        AbstractPage page1 = new AbstractPage(proxy, FIREFOX);
+//        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
+//        String targetEmail = page1.registerMinuteEmail();
+//        page1.fillRatingForm(targetEmail);
+//        usedProxiesToRecord.add(proxy);
+//        page1.confirmRateUsingMinuteEmail();
+//        page1.fillSatisfactionSurvey(stateForProxy);
+//    }
 
 //
 //    @Test(retryAnalyzer = SimpleRetryer.class)
@@ -291,14 +291,6 @@ public class FinanceTest {
 //        AbstractPage page1 = new AbstractPage(targetProxy, CHROME);
 //        throw new WebDriverException("Standard error");
 //    }
-//
-//    @Test
-//    public void testFinance13() throws Exception{
-//        ProxyObject proxy = MyCSVParser.parseCSVToProxy();
-//        AbstractPage page1 = new AbstractPage(proxy, CHROME);
-//        String stateForProxy = page1.findStateForProxy(proxy.getProxyIp());
-//        System.out.println("Trust Hello!!!");
-//    }
 
 
 
@@ -306,7 +298,7 @@ public class FinanceTest {
     public void tearDown(ITestResult result) throws Exception {
         DriverFactory.closeDriver();
         if (result.getStatus() == ITestResult.SUCCESS) {
-            int sleepTime = (int) (Math.random() * 1200000) + 1200000;
+            int sleepTime = (int) (Math.random() * 1200000) + 1800000;
             //int sleepTime = (int)(Math.random()*3000)+5000;
             LOG.info(String.format("Waiting for another bot session : %d", sleepTime));
             Thread.sleep(sleepTime);
@@ -315,6 +307,8 @@ public class FinanceTest {
 
     @AfterClass
     public void endDay() throws Exception {
+        LOG.warn("----------------------------------------------------");
+        LOG.warn(String.format("Total proxies used : %d", usedProxiesToRecord.size()));
         LOG.warn("---LIST OF USED PROXIES---");
         for(ProxyObject proxy : usedProxiesToRecord) {
             System.out.println(String.format("%s,%s,%s", proxy.getProxyIp(), proxy.getProxyPort(), proxy.getProxyType()));
